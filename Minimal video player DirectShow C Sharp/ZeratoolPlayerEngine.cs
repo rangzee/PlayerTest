@@ -22,6 +22,8 @@ namespace Minimal_video_player_DirectShow_C_Sharp
         private IBaseFilter audioDecoder = null;
         private IBaseFilter audioRenderer = null;
 
+        public bool IsPlaying = false;
+
         public const int ERROR_FILE_NAME_NOT_DEFINED = -100;
         public const int ERROR_FILE_NOT_FOUND = -101;
         public const int ERROR_VIDEO_OUTPUT_WINDOW_NOT_DEFINED = -102;
@@ -29,6 +31,41 @@ namespace Minimal_video_player_DirectShow_C_Sharp
 
         public string FileName { get; set; }
         public Control VideoOutputWindow { get; set; }
+
+        public IBasicVideo Video => graphBuilder as IBasicVideo;
+        public IBasicAudio Audio => graphBuilder as IBasicAudio;
+        public IMediaEventEx EventEx => graphBuilder as IMediaEventEx;
+        public IMediaSeeking Seeking => graphBuilder as IMediaSeeking;
+        public IVideoWindow VideoWindow => videoWindow;
+        public IMediaControl Control => mediaControl;
+        public IMediaPosition MediaPosition => mediaPosition;
+
+        public void Play()
+        {
+            var control = graphBuilder as IMediaControl;
+            control.Run();
+            IsPlaying = true;
+        }
+        public void Pause()
+        {
+            var control = graphBuilder as IMediaControl;
+            control.Pause();
+            IsPlaying = false;
+        }
+
+        public double Duration
+        {
+            get
+            {
+                double duration = 0.0;
+                if (mediaPosition != null)
+                {
+                    mediaPosition.get_Duration(out duration);
+                }
+                return duration;
+            }
+        }
+
         public double Position
         {
             get
