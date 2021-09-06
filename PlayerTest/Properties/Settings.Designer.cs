@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace Minimal_video_player_DirectShow_C_Sharp.Properties
+namespace PlayerTest.Properties
 {
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]

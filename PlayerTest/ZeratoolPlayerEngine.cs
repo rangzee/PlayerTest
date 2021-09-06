@@ -3,9 +3,9 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using DirectShowLib;
-using static Minimal_video_player_DirectShow_C_Sharp.DirectShowUtils;
+using static PlayerTest.DirectShowUtils;
 
-namespace Minimal_video_player_DirectShow_C_Sharp
+namespace PlayerTest
 {
     public class ZeratoolPlayerEngine
     {

@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace Minimal_video_player_DirectShow_C_Sharp.Properties
+namespace PlayerTest.Properties
 {
     /// <summary>
     ///   Класс ресурсов со строгим типом для поиска локализованных строк и пр.
@@ -43,7 +43,7 @@ namespace Minimal_video_player_DirectShow_C_Sharp.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Minimal_video_player_DirectShow_C_Sharp.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PlayerTest.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

@@ -1,5 +1,5 @@
 ﻿
-namespace Minimal_video_player_DirectShow_C_Sharp
+namespace PlayerTest
 {
     partial class Form1
     {
@@ -101,7 +101,7 @@ namespace Minimal_video_player_DirectShow_C_Sharp
             this.MinimumSize = new System.Drawing.Size(300, 188);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Minimal video player DirectShow";
+            this.Text = "PlayerTest";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Minimal_video_player_DirectShow_C_Sharp
+namespace PlayerTest
 {
     static class Program
     {

@@ -2,10 +2,10 @@
 using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
-using static Minimal_video_player_DirectShow_C_Sharp.DirectShowUtils;
-using static Minimal_video_player_DirectShow_C_Sharp.ZeratoolPlayerEngine;
+using static PlayerTest.DirectShowUtils;
+using static PlayerTest.ZeratoolPlayerEngine;
 
-namespace Minimal_video_player_DirectShow_C_Sharp
+namespace PlayerTest
 {
     public partial class Form1 : Form
     {

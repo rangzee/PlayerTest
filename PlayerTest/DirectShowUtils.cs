@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 using DirectShowLib;
 
-namespace Minimal_video_player_DirectShow_C_Sharp
+namespace PlayerTest
 {
     public static class DirectShowUtils
     {
